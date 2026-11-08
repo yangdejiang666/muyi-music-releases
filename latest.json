@@ -1,0 +1,26 @@
+{
+    "schema":  1,
+    "channel":  "stable",
+    "version":  "1.0.2",
+    "version_code":  3,
+    "published_at":  "2026-11-08T12:43:28.1484677Z",
+    "min_supported_code":  1,
+    "force":  false,
+    "notes":  "1. 新增 GitHub 检查更新、下载与安装\r\n2. 电脑版支持 wwwroot 热替换与重启安装\r\n3. 同步本地音乐扫描与下载管理改进",
+    "platforms":  {
+                      "android":  {
+                                      "universal_fallback":  {
+                                                                 "asset":  "muyi-android-universal-v1.0.2.apk",
+                                                                 "sha256":  "a09cf590c7b5e4a54d7b55c8a40bd3f6a82fee6f406dc989fb854b6b20bdd53f",
+                                                                 "size":  61881762,
+                                                                 "version_code":  3
+                                                             }
+                                  },
+                      "windows":  {
+                                      "kind":  "web",
+                                      "asset":  "muyi-windows-web-v1.0.2.zip",
+                                      "sha256":  "e4762b85e3ed8479ef0abdf6fde83cad4833e9bd3290aec04752a855d43d3899",
+                                      "size":  28861596
+                                  }
+                  }
+}
