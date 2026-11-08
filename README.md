@@ -15,6 +15,13 @@ https://api.github.com/repos/yangdejiang666/muyi-music-releases/releases/latest
 
 下载资产时使用 Release API 的 `assets[].url` + `Accept: application/octet-stream`，不依赖 `browser_download_url`，避免 `github.com` 在部分网络不可达。
 
+
+## 当前发布策略
+
+- Android 默认发布 **universal 单包**（`muyi-android-universal-vX.Y.Z.apk`）。如改用 `--split-per-abi`，`update.json` 的每个 ABI 条目必须带该 APK 的真实 `version_code`（Flutter 会写成 `1000*ABI + build`），客户端会按 ABI 条目比较，而不是只看顶层 `version_code`。
+- 电脑版首次安装下载 **full 包**（`muyi-windows-full-...zip`）；`web` 包只用于已有安装热替换 `wwwroot`。full 包默认不进入自动更新清单，除非包内包含 `updater/MuyiMusicUpdater.exe`。
+- 1.0.0 使用 debug 签名，1.0.2 起使用正式 release 签名；1.0.0 用户需要卸载重装一次，之后可覆盖更新。
+
 ## 版本约定
 
 - Git tag：`v1.0.2`
@@ -37,6 +44,7 @@ powershell -ExecutionPolicy Bypass -File tool/make_release.ps1 `
   -Version 1.0.2 -Build 3 `
   -AndroidUniversal "dist/android/muyi-android-universal-v1.0.2.apk" `
   -DesktopWebZip "dist/desktop/木易音乐-电脑版-1.0.2-web.zip" `
+  -DesktopFullZip "dist/desktop/木易音乐-电脑版-1.0.2-win-x64.zip" `
   -Notes "更新说明" -Publish
 ```
 
