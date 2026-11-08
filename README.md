@@ -17,10 +17,10 @@ https://api.github.com/repos/yangdejiang666/muyi-music-releases/releases/latest
 
 ## 版本约定
 
-- Git tag：`v1.0.1`
+- Git tag：`v1.0.2`
 - `update.json.version_code`：Android `versionCode`，必须单调递增
-- APK 文件名：`muyi-android-arm64-v1.0.1.apk`、`muyi-android-x86_64-v1.0.1.apk`、`muyi-android-universal-v1.0.1.apk`
-- Windows web 包：`muyi-windows-web-v1.0.1.zip`，根目录包含 `wwwroot/`
+- APK 文件名：`muyi-android-arm64-v1.0.2.apk`、`muyi-android-x86_64-v1.0.2.apk`、`muyi-android-universal-v1.0.2.apk`
+- Windows web 包：`muyi-windows-web-v1.0.2.zip`，根目录包含 `wwwroot/`
 - 所有资产必须提供小写十六进制 SHA-256
 
 ## 发布流程
@@ -30,13 +30,13 @@ https://api.github.com/repos/yangdejiang666/muyi-music-releases/releases/latest
 flutter build apk --release
 
 # 2. 构建电脑版（源码私有仓库）
-powershell -ExecutionPolicy Bypass -File tool/build_desktop.ps1 -Version 1.0.1 -Build 2
+powershell -ExecutionPolicy Bypass -File tool/build_desktop.ps1 -Version 1.0.2 -Build 3
 
 # 3. 生成 update.json 并发布
 powershell -ExecutionPolicy Bypass -File tool/make_release.ps1 `
-  -Version 1.0.1 -Build 2 `
-  -AndroidUniversal "dist/android/muyi-android-universal-v1.0.1.apk" `
-  -DesktopWebZip "dist/desktop/木易音乐-电脑版-1.0.1-web.zip" `
+  -Version 1.0.2 -Build 3 `
+  -AndroidUniversal "dist/android/muyi-android-universal-v1.0.2.apk" `
+  -DesktopWebZip "dist/desktop/木易音乐-电脑版-1.0.2-web.zip" `
   -Notes "更新说明" -Publish
 ```
 
