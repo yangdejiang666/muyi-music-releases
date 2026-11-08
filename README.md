@@ -22,6 +22,17 @@ https://api.github.com/repos/yangdejiang666/muyi-music-releases/releases/latest
 - 电脑版首次安装下载 **full 包**（`muyi-windows-full-...zip`）；`web` 包只用于已有安装热替换 `wwwroot`。full 包默认不进入自动更新清单，除非包内包含 `updater/MuyiMusicUpdater.exe`。
 - 1.0.0 使用 debug 签名，1.0.2 起使用正式 release 签名；1.0.0 用户需要卸载重装一次，之后可覆盖更新。
 
+## 国内网络与镜像
+
+客户端会按以下顺序回退：
+
+1. `api.github.com` + `release-assets.githubusercontent.com`
+2. `https://gh-proxy.com/`
+3. `https://gh-proxy.net/`
+4. `https://ghproxy.net/`
+
+Release API 不可用时读取仓库根目录的 `latest.json`（`raw.githubusercontent.com` 或镜像）。安装包下载同样按 API 资产地址 → GitHub 浏览器地址 → 镜像地址尝试，并校验 SHA-256。
+
 ## 版本约定
 
 - Git tag：`v1.0.2`
