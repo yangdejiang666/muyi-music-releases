@@ -1,26 +1,26 @@
 {
     "schema":  1,
     "channel":  "stable",
-    "version":  "1.0.2",
-    "version_code":  3,
-    "published_at":  "2026-11-08T12:43:28.1484677Z",
+    "version":  "1.0.3",
+    "version_code":  4,
+    "published_at":  "2026-11-08T15:13:33.8687829Z",
     "min_supported_code":  1,
     "force":  false,
-    "notes":  "1. 新增 GitHub 检查更新、下载与安装\r\n2. 电脑版支持 wwwroot 热替换与重启安装\r\n3. 同步本地音乐扫描与下载管理改进",
+    "notes":  "1. 检查更新入口换用 GitHub 猫头像，更新弹窗重新设计\r\n2. 新增完整更新日志、版本对比、下载进度与发布页复制\r\n3. 国内网络自动回退 gh-proxy.com / gh-proxy.net / ghproxy.net 镜像\r\n4. 修复 release 资产替换后检查更新 404 的问题\r\n\r\n提示：1.0.0 使用 debug 签名，1.0.2 起使用正式 release 签名；1.0.0 用户请先卸载旧版再安装。",
     "platforms":  {
                       "android":  {
                                       "universal_fallback":  {
-                                                                 "asset":  "muyi-android-universal-v1.0.2.apk",
-                                                                 "sha256":  "a09cf590c7b5e4a54d7b55c8a40bd3f6a82fee6f406dc989fb854b6b20bdd53f",
-                                                                 "size":  61881762,
-                                                                 "version_code":  3
+                                                                 "asset":  "muyi-android-universal-v1.0.3.apk",
+                                                                 "sha256":  "7179fa7cad6271a069f19ae8afb8eedeb175b426c663fa798a6cac7ba4d07e67",
+                                                                 "size":  62094823,
+                                                                 "version_code":  4
                                                              }
                                   },
                       "windows":  {
                                       "kind":  "web",
-                                      "asset":  "muyi-windows-web-v1.0.2.zip",
-                                      "sha256":  "e4762b85e3ed8479ef0abdf6fde83cad4833e9bd3290aec04752a855d43d3899",
-                                      "size":  28861596
+                                      "asset":  "muyi-windows-web-v1.0.3.zip",
+                                      "sha256":  "2216ca70427be4c749c328e6031b9c38bc48cba1e229ff206901a4447f172ec7",
+                                      "size":  28881289
                                   }
                   }
 }
