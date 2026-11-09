@@ -2,6 +2,8 @@
 
 本仓库只用于发布木易音乐的构建产物与 `update.json`，**不包含源码**。源码在私有仓库维护。
 
+> **推送源码不会触发客户端更新。** 客户端只读取本仓库的 Release 和根目录 `latest.json`；必须发布新版本并让 `update.json.version_code` 递增，客户端才会显示“可更新”。
+
 ## 客户端如何使用
 
 - Android：读取本仓库最新 Release 的 `update.json`，按 ABI 选择 APK，流式下载并校验 SHA-256，然后调用系统安装器。
@@ -12,6 +14,8 @@
 ```
 https://api.github.com/repos/yangdejiang666/muyi-music-releases/releases/latest
 ```
+
+客户端优先读取镜像上的 `latest.json`，失败后再走 Release API。
 
 下载资产时使用 Release API 的 `assets[].url` + `Accept: application/octet-stream`，不依赖 `browser_download_url`，避免 `github.com` 在部分网络不可达。
 
