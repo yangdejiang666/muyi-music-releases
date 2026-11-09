@@ -1,26 +1,26 @@
 {
     "schema":  1,
     "channel":  "stable",
-    "version":  "1.0.3",
-    "version_code":  4,
-    "published_at":  "2026-11-08T15:13:33.8687829Z",
+    "version":  "1.0.4",
+    "version_code":  5,
+    "published_at":  "2026-11-09T04:43:54.2970744Z",
     "min_supported_code":  1,
     "force":  false,
-    "notes":  "1. 检查更新入口换用 GitHub 猫头像，更新弹窗重新设计\r\n2. 新增完整更新日志、版本对比、下载进度与发布页复制\r\n3. 国内网络自动回退 gh-proxy.com / gh-proxy.net / ghproxy.net 镜像\r\n4. 修复 release 资产替换后检查更新 404 的问题\r\n\r\n提示：1.0.0 使用 debug 签名，1.0.2 起使用正式 release 签名；1.0.0 用户请先卸载旧版再安装。",
+    "notes":  "1. 启动时自动检查 GitHub 新版本，有更新才弹窗并显示更新日志\r\n2. 设置页与电脑版标题栏新增“可更新”标识，猫头像入口可直接打开更新\r\n3. 点击更新后自动下载、校验 SHA-256 并安装；电脑版下载完成后自动重启安装\r\n4. Android 系统安装器仍会要求用户确认一次，这是系统安全限制\r\n\r\n提示：1.0.0 使用 debug 签名，1.0.2 起使用正式 release 签名；1.0.0 用户请先卸载旧版再安装。",
     "platforms":  {
                       "android":  {
                                       "universal_fallback":  {
-                                                                 "asset":  "muyi-android-universal-v1.0.3.apk",
-                                                                 "sha256":  "7179fa7cad6271a069f19ae8afb8eedeb175b426c663fa798a6cac7ba4d07e67",
-                                                                 "size":  62094823,
-                                                                 "version_code":  4
+                                                                 "asset":  "muyi-android-universal-v1.0.4.apk",
+                                                                 "sha256":  "d86c932582934b4a765029804e32eef7c647f5a403b7d03154c4c66a3c9a82e2",
+                                                                 "size":  62160359,
+                                                                 "version_code":  5
                                                              }
                                   },
                       "windows":  {
                                       "kind":  "web",
-                                      "asset":  "muyi-windows-web-v1.0.3.zip",
-                                      "sha256":  "2216ca70427be4c749c328e6031b9c38bc48cba1e229ff206901a4447f172ec7",
-                                      "size":  28881289
+                                      "asset":  "muyi-windows-web-v1.0.4.zip",
+                                      "sha256":  "66f3536e5d8ecc687817b10f279ba64b7ca317ab3b7ac9047a94fe49a2872588",
+                                      "size":  28881963
                                   }
                   }
 }
