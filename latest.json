@@ -1,26 +1,26 @@
 {
     "schema":  1,
     "channel":  "stable",
-    "version":  "1.0.5",
-    "version_code":  6,
-    "published_at":  "2026-11-09T04:59:07.5216714Z",
+    "version":  "1.0.6",
+    "version_code":  7,
+    "published_at":  "2026-11-09T08:35:02.3700799Z",
     "min_supported_code":  1,
     "force":  false,
-    "notes":  "1. 修复 Android 更新弹窗把通用包显示成 Windows web 包的问题\r\n2. 启动自动检查与“可更新”标识已上线\r\n3. 点击更新后自动下载、校验并打开安装器；电脑版下载后自动重启安装\r\n\r\n提示：Android 系统安装器仍需要用户确认一次；1.0.0 使用 debug 签名，1.0.2 起使用正式 release 签名。",
+    "notes":  "1. 检查更新优先读取镜像上的 latest.json，避免 GitHub API 403/限流与代理问题\r\n2. 新增 gh-proxy.org 与 jsDelivr 静态清单镜像，静态镜像失败再回退 GitHub API\r\n3. 修复代理返回 403 时无法检查更新的问题；错误信息会列出尝试过的来源\r\n4. 新增版本发布流程文档：推送源码不会触发更新，必须发布新 Release\r\n\r\n提示：Android 系统安装器仍需用户确认一次。",
     "platforms":  {
                       "android":  {
                                       "universal_fallback":  {
-                                                                 "asset":  "muyi-android-universal-v1.0.5.apk",
-                                                                 "sha256":  "3f3ead635947fdafcbd70e621631eef5edb8cbf37cb719f261659053a9014e13",
+                                                                 "asset":  "muyi-android-universal-v1.0.6.apk",
+                                                                 "sha256":  "58b1ea43f54bdd0f2c15185b7a5afa9deda2796bba4d19f7fa5411557190611f",
                                                                  "size":  62160359,
-                                                                 "version_code":  6
+                                                                 "version_code":  7
                                                              }
                                   },
                       "windows":  {
                                       "kind":  "web",
-                                      "asset":  "muyi-windows-web-v1.0.5.zip",
-                                      "sha256":  "22bc2f39c886740d2a7c7eb1a522007ce273b84e0622cc293a3639dcb85e0916",
-                                      "size":  28881965
+                                      "asset":  "muyi-windows-web-v1.0.6.zip",
+                                      "sha256":  "2c290c07ed5991cac28e0055b112312610047d13f44d92e20b67e3d08d4a20ca",
+                                      "size":  28881967
                                   }
                   }
 }
