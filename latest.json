@@ -1,26 +1,26 @@
 {
     "schema":  1,
     "channel":  "stable",
-    "version":  "1.0.6",
-    "version_code":  7,
-    "published_at":  "2026-11-09T08:35:02.3700799Z",
+    "version":  "1.0.7",
+    "version_code":  1000700,
+    "published_at":  "2026-11-09T11:31:51.2605654Z",
     "min_supported_code":  1,
     "force":  false,
-    "notes":  "1. 检查更新优先读取镜像上的 latest.json，避免 GitHub API 403/限流与代理问题\r\n2. 新增 gh-proxy.org 与 jsDelivr 静态清单镜像，静态镜像失败再回退 GitHub API\r\n3. 修复代理返回 403 时无法检查更新的问题；错误信息会列出尝试过的来源\r\n4. 新增版本发布流程文档：推送源码不会触发更新，必须发布新 Release\r\n\r\n提示：Android 系统安装器仍需用户确认一次。",
+    "notes":  "1. 修复 1.0.4+7 与 1.0.6+7 版本码碰撞导致的“已是最新”误判\r\n2. 版本码改为 major*1000000 + minor*10000 + patch*100，1.0.7 = 1000700\r\n3. 客户端同时比较版本码与语义版本：版本码相同但版本名更大也会提示更新\r\n4. 旧的 1.0.4 build 7 APK 可以直接更新到 1.0.7，无需卸载\r\n\r\n提示：Android 系统安装器仍需用户确认一次；请优先使用镜像 latest.json 检查更新。",
     "platforms":  {
                       "android":  {
                                       "universal_fallback":  {
-                                                                 "asset":  "muyi-android-universal-v1.0.6.apk",
-                                                                 "sha256":  "58b1ea43f54bdd0f2c15185b7a5afa9deda2796bba4d19f7fa5411557190611f",
-                                                                 "size":  62160359,
-                                                                 "version_code":  7
+                                                                 "asset":  "muyi-android-universal-v1.0.7.apk",
+                                                                 "sha256":  "64cd6c04b38345d5024f4b384dd97a13684a48a3b4b4ca8e560512b0f6a049e0",
+                                                                 "size":  62160363,
+                                                                 "version_code":  1000700
                                                              }
                                   },
                       "windows":  {
                                       "kind":  "web",
-                                      "asset":  "muyi-windows-web-v1.0.6.zip",
-                                      "sha256":  "2c290c07ed5991cac28e0055b112312610047d13f44d92e20b67e3d08d4a20ca",
-                                      "size":  28881967
+                                      "asset":  "muyi-windows-web-v1.0.7.zip",
+                                      "sha256":  "b22bb20fbd6e76c02bad9b62cb0cbedbbd8eb45d56b164d359d5e3a0cca3f670",
+                                      "size":  28882059
                                   }
                   }
 }
