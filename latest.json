@@ -1,32 +1,32 @@
 {
-  "schema": 1,
-  "channel": "stable",
-  "version": "1.0.9",
-  "version_code": 1000900,
-  "published_at": "2026-11-09T14:35:07.8068580Z",
-  "min_supported_code": 1,
-  "force": false,
-  "notes": "木易音乐 1.0.9\n\n【新增】\n1. 安卓与 Windows 客户端统一接入 GitHub 自动更新：启动自动检查，设置页显示「可更新」标识。\n2. 更新弹窗展示版本号、构建号、更新来源（GitHub API / 国内镜像）与完整更新日志。\n3. Android 更新支持 APK 下载、断点续传、SHA-256 校验与系统安装器安装。\n4. Windows 更新支持 web 包热替换 wwwroot，重启客户端生效；完整包仅在宿主过旧时使用。\n5. 更新清单同时支持 GitHub API、raw.githubusercontent.com、jsDelivr 与国内镜像回退。\n\n【修复】\n1. 网易云非 VIP 登录后只播放 30/45 秒：移除官方 wy 试听候选（freeTrialInfo），仅使用作者 wy2 完整源；无完整源时通过作者网关搜索同曲后重试。\n2. 网易云搜索歌曲专辑封面缺失：搜索接口只返回 picId，旧拼址无效；改为通过 /song/detail 获取真实 al.picUrl，播放页与歌词封面恢复。\n3. 播放解析与网易云登录态解耦：播放使用独立匿名客户端，登录只用于歌单、每日推荐、头像和资料；远程登录态 URL 不再覆盖作者网关解析。\n4. 歌词页过滤作词、作曲、编曲、制作人等制作信息行（含较长行），只在真实歌词开始后切换。\n5. 修复版本码碰撞，采用 major*1000000 + minor*10000 + patch*100 的高单调版本码；1.0.9 = 1000900，旧版本可直接升级。\n\n【界面】\n1. 底部 Dock 采用液态玻璃与抽屉式弹性切换，接近原包交互。\n2. 网易云登录后自动刷新头像与资料。\n3. 播放页、歌词页、搜索页与资料库的细节统一。\n\n【升级说明】\n1. Android：打开 App → 设置 → 检查更新，或等待启动自动检查；下载完成后需在系统安装器确认一次；签名与现有版本一致，登录态与播放历史保留。\n2. Windows：设置 → 检查更新；web 包下载完成后替换 wwwroot 并重启客户端；登录态与播放历史保留。\n3. 从 1.0.9 起不再单独分发 APK；后续版本统一通过 GitHub Releases 与 latest.json 发布，客户端自动拉取。",
-  "platforms": {
-    "android": {
-      "universal_fallback": {
-        "asset": "muyi-android-universal-v1.0.9.apk",
-        "sha256": "ba1e2cc3a1bb4d47a67ec600815bb1328fde0e5f4f3d8e57caab99a1e96a9be7",
-        "size": 62209515,
-        "version_code": 1000900
-      }
-    },
-    "windows": {
-      "kind": "web",
-      "asset": "muyi-windows-web-v1.0.9.zip",
-      "sha256": "13ea785798a26bacc8cda72c8ecaa2692d3d173dc6dca4754d892638d54834ba",
-      "size": 28882559,
-      "full": {
-        "kind": "full",
-        "asset": "muyi-windows-full-v1.0.9.zip",
-        "sha256": "16400a2ca57776e0d68a89fedc6366174a188ecb1ae1e461f56eb95f1ee1052c",
-        "size": 164276042
-      }
-    }
-  }
+    "schema":  1,
+    "channel":  "stable",
+    "version":  "1.0.10",
+    "version_code":  1001000,
+    "published_at":  "2026-11-10T02:34:56.1931383Z",
+    "min_supported_code":  1,
+    "force":  false,
+    "notes":  "木易音乐 1.0.10\n\n【界面优化】\n1. 底部 Dock 与迷你播放器玻璃减薄：着色降到约 27%，保留背景模糊，移除周期扫光、流动色块与移动高光，滚动时不再闪烁。\n2. 浅色主题可读性修复：移除导航文字和图标的黑色投影，标题改为近黑色，副标题与未选中导航改为深灰绿，解决文字发糊的问题。\n3. 浅色主题未选中项保持透明，仅当前选中的胶囊加厚突出；选中胶囊使用顶部高光、细描边和极轻阴影，形成轻微立体感。\n4. 深色主题外阴影降到近乎不可见，只保留细边和轻微顶部反光；选中项用更亮的玻璃胶囊突出。\n5. 迷你播放器播放/下一首改为半透明圆形浮层按钮，降低底色和阴影强度；圆形搜索按钮同步改为透明玻璃样式。\n6. 导航文字样式改为继承主题字体，避免不同主题下字体不一致。\n\n【兼容与更新】\n1. Android 与 Windows 版本同步为 1.0.10+1001000。\n2. 更新通道继续使用 latest.json 镜像优先；Android 下载 APK 后校验 SHA-256 并交给系统安装器，Windows 热替换 wwwroot 后重启生效。\n3. 登录态、歌单、播放历史与已下载内容保留，本版不改变音源解析和账号逻辑。\n\n【升级说明】\n1. Android：设置 → 检查更新，或等待启动自动检查；下载完成后在系统安装器确认一次。\n2. Windows：设置 → 检查更新；web 包下载完成后替换 wwwroot 并重启客户端。\n3. 首次安装仍使用 Release 中的 universal APK，后续版本由客户端自动拉取。",
+    "platforms":  {
+                      "android":  {
+                                      "universal_fallback":  {
+                                                                 "asset":  "muyi-android-universal-v1.0.10.apk",
+                                                                 "sha256":  "db3a1646b3b697ce0d34f3d5781e2e5690828ec93cd7ade47e7b1a3308785e60",
+                                                                 "size":  62209519,
+                                                                 "version_code":  1001000
+                                                             }
+                                  },
+                      "windows":  {
+                                      "kind":  "web",
+                                      "asset":  "muyi-windows-web-v1.0.10.zip",
+                                      "sha256":  "ef9dd5da299b8ec95f822451a6423986e3c0b6a91686c11781850f96429b6632",
+                                      "size":  28882568,
+                                      "full":  {
+                                                   "kind":  "full",
+                                                   "asset":  "muyi-windows-full-v1.0.10.zip",
+                                                   "sha256":  "6abf5816a32ff3b510c3d0e598e7f0125ddfe4c05aa785de7e09a5ad8f1d9f42",
+                                                   "size":  164276048
+                                               }
+                                  }
+                  }
 }
