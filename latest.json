@@ -1,32 +1,20 @@
 {
-    "schema":  1,
-    "channel":  "stable",
-    "version":  "1.0.10",
-    "version_code":  1001000,
-    "published_at":  "2026-11-10T02:34:56.1931383Z",
-    "min_supported_code":  1,
-    "force":  false,
-    "notes":  "木易音乐 1.0.10\n\n【界面优化】\n1. 底部 Dock 与迷你播放器玻璃减薄：着色降到约 27%，保留背景模糊，移除周期扫光、流动色块与移动高光，滚动时不再闪烁。\n2. 浅色主题可读性修复：移除导航文字和图标的黑色投影，标题改为近黑色，副标题与未选中导航改为深灰绿，解决文字发糊的问题。\n3. 浅色主题未选中项保持透明，仅当前选中的胶囊加厚突出；选中胶囊使用顶部高光、细描边和极轻阴影，形成轻微立体感。\n4. 深色主题外阴影降到近乎不可见，只保留细边和轻微顶部反光；选中项用更亮的玻璃胶囊突出。\n5. 迷你播放器播放/下一首改为半透明圆形浮层按钮，降低底色和阴影强度；圆形搜索按钮同步改为透明玻璃样式。\n6. 导航文字样式改为继承主题字体，避免不同主题下字体不一致。\n\n【兼容与更新】\n1. Android 与 Windows 版本同步为 1.0.10+1001000。\n2. 更新通道继续使用 latest.json 镜像优先；Android 下载 APK 后校验 SHA-256 并交给系统安装器，Windows 热替换 wwwroot 后重启生效。\n3. 登录态、歌单、播放历史与已下载内容保留，本版不改变音源解析和账号逻辑。\n\n【升级说明】\n1. Android：设置 → 检查更新，或等待启动自动检查；下载完成后在系统安装器确认一次。\n2. Windows：设置 → 检查更新；web 包下载完成后替换 wwwroot 并重启客户端。\n3. 首次安装仍使用 Release 中的 universal APK，后续版本由客户端自动拉取。",
-    "platforms":  {
-                      "android":  {
-                                      "universal_fallback":  {
-                                                                 "asset":  "muyi-android-universal-v1.0.10.apk",
-                                                                 "sha256":  "db3a1646b3b697ce0d34f3d5781e2e5690828ec93cd7ade47e7b1a3308785e60",
-                                                                 "size":  62209519,
-                                                                 "version_code":  1001000
-                                                             }
-                                  },
-                      "windows":  {
-                                      "kind":  "web",
-                                      "asset":  "muyi-windows-web-v1.0.10.zip",
-                                      "sha256":  "ef9dd5da299b8ec95f822451a6423986e3c0b6a91686c11781850f96429b6632",
-                                      "size":  28882568,
-                                      "full":  {
-                                                   "kind":  "full",
-                                                   "asset":  "muyi-windows-full-v1.0.10.zip",
-                                                   "sha256":  "6abf5816a32ff3b510c3d0e598e7f0125ddfe4c05aa785de7e09a5ad8f1d9f42",
-                                                   "size":  164276048
-                                               }
-                                  }
-                  }
+  "schema": 1,
+  "channel": "stable",
+  "version": "1.0.8",
+  "version_code": 1000800,
+  "min_supported_code": 1,
+  "force": false,
+  "notes": "1. 恢复滚动抽屉 Dock 与果冻式切换动画\n2. 底部 Tab 加重玻璃选中框\n3. 修复歌单广场返回后封面/列表被清空\n4. 切歌立即停止旧音频，新增“正在解析音源…”提示\n5. 播放地址缓存并预取下一首，切换更快\n6. 对齐原包 3 Tab + 独立搜索圆钮、液态玻璃与网易云头像",
+  "platforms": {
+    "android": {
+      "universal_fallback": {
+        "asset": "muyi-android-universal-v1.0.8.apk",
+        "sha256": "1273722d5a4e526564e710d496e80dee6ba7b69e71628cb51f2b42aeb79c63a7",
+        "size": 62144006,
+        "version_code": 1000800
+      }
+    }
+  },
+  "published_at": "2026-11-10T02:49:09.388301Z"
 }
