@@ -1,20 +1,28 @@
 {
   "schema": 1,
   "channel": "stable",
-  "version": "1.0.13",
-  "version_code": 1001300,
+  "version": "1.0.14",
+  "version_code": 1001400,
   "min_supported_code": 1,
   "force": false,
-  "notes": "1. 合并 1.0.10 更新、Skyward 液态玻璃 Dock 与 vivo 原子岛适配\n2. 补齐 vivo MediaSession 元数据、audio 分类与歌词 extras\n3. 保留匿名网关播放、本地源直连、播放地址缓存与下一首预取\n4. OriginOS 6 请在「原子随身听 → 音源应用管理」中选择木易音乐\n5. 版本 1.0.13+1001300",
+  "notes": "1. 新增 vivo 原子岛专用包：安装包名伪装为 com.netease.cloudmusic，绕过 OriginOS 的包名白名单\n2. 普通机型继续使用 com.muyi.music，功能与 1.0.13 一致\n3. 更新清单按安装包名分发对应 APK，vivo 包不会再被通用包装成第二个应用\n4. 版本 1.0.14+1001400",
   "platforms": {
     "android": {
+      "variants": {
+        "com.netease.cloudmusic": {
+          "asset": "muyi-android-vivo-v1.0.14.apk",
+          "sha256": "c9451ea31574fdad9815b16e4f7926828b7e78e115767fd400f929e93d87b908",
+          "size": 63437901,
+          "version_code": 1001400
+        }
+      },
       "universal_fallback": {
-        "asset": "muyi-android-universal-v1.0.13.apk",
-        "sha256": "477fd366bd8e993747fc531c909d97f33175e13faefa8b601d0605b2f5529d39",
+        "asset": "muyi-android-universal-v1.0.14.apk",
+        "sha256": "53e82b0af66ac12284e79b4179aee668c8b438f773615b47953b2a49aa10c69e",
         "size": 63437881,
-        "version_code": 1001300
+        "version_code": 1001400
       }
     }
   },
-  "published_at": "2026-11-10T10:06:54.349423Z"
+  "published_at": "2026-11-10T11:40:00.000000Z"
 }
