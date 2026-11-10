@@ -1,20 +1,20 @@
 {
   "schema": 1,
   "channel": "stable",
-  "version": "1.0.9",
-  "version_code": 1000900,
+  "version": "1.0.11",
+  "version_code": 1001100,
   "min_supported_code": 1,
   "force": false,
-  "notes": "1. 补齐 vivo 原子岛 MediaSession 元数据与音频应用分类\n2. 完整封面、标题、歌手、时长与播放进度字段\n3. 增加 vivo 歌词 extras 与系统 seek/fastForward/rewind 动作\n4. OriginOS 6 用户可在「原子随身听 → 音源应用管理」中选择木易音乐\n5. 保留 1.0.8 的抽屉 Dock、歌单缓存与切歌优化",
+  "notes": "1. 补齐 vivo 原子岛 MediaSession 元数据与音频应用分类\n2. 完整封面、标题、歌手、时长与播放进度字段，增加 vivo 歌词 extras\n3. 包含 1.0.10 的 Dock 玻璃减薄、浅色主题可读性与苹果风按钮\n4. OriginOS 6 用户请在「原子随身听 → 音源应用管理」中选择木易音乐\n5. 歌单缓存、抽屉 Dock 与切歌优化保持",
   "platforms": {
     "android": {
       "universal_fallback": {
-        "asset": "muyi-android-universal-v1.0.9.apk",
-        "sha256": "6751db7e8cb3ea0b580b893934de276bc5706e0ab91c1171aa965b598e97c2a1",
-        "size": 62144062,
-        "version_code": 1000900
+        "asset": "muyi-android-universal-v1.0.11.apk",
+        "sha256": "30be797c80fd5e9caabacc07272c41eb6044e8deabf7a3ed612ed2d4bb5cd13f",
+        "size": 62275103,
+        "version_code": 1001100
       }
     }
   },
-  "published_at": "2026-11-10T07:17:49.478287Z"
+  "published_at": "2026-11-10T08:58:23.391324Z"
 }
