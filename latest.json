@@ -1,20 +1,20 @@
 {
   "schema": 1,
   "channel": "stable",
-  "version": "1.0.12",
-  "version_code": 1001200,
+  "version": "1.0.13",
+  "version_code": 1001300,
   "min_supported_code": 1,
   "force": false,
-  "notes": "1. 合并 Skyward 液态玻璃 Dock（着色器玻璃、透明底板与圆形按钮）\n2. 保留 1.0.10 的浅色主题可读性与按钮观感\n3. 补齐 vivo 原子岛 MediaSession 元数据与 audio 分类\n4. 完整封面、标题、歌手、时长、进度，增加 vivo 歌词 extras\n5. OriginOS 6 请在「原子随身听 → 音源应用管理」中选择木易音乐\n6. 歌单缓存、抽屉 Dock、切歌缓存与预取保持",
+  "notes": "1. 合并 1.0.10 更新、Skyward 液态玻璃 Dock 与 vivo 原子岛适配\n2. 补齐 vivo MediaSession 元数据、audio 分类与歌词 extras\n3. 保留匿名网关播放、本地源直连、播放地址缓存与下一首预取\n4. OriginOS 6 请在「原子随身听 → 音源应用管理」中选择木易音乐\n5. 版本 1.0.13+1001300",
   "platforms": {
     "android": {
       "universal_fallback": {
-        "asset": "muyi-android-universal-v1.0.12.apk",
-        "sha256": "55f4c2d40828d9fc3a4cdbf8d5d9532649f33d4efdb47093231de87c74d2c4e6",
-        "size": 63405113,
-        "version_code": 1001200
+        "asset": "muyi-android-universal-v1.0.13.apk",
+        "sha256": "477fd366bd8e993747fc531c909d97f33175e13faefa8b601d0605b2f5529d39",
+        "size": 63437881,
+        "version_code": 1001300
       }
     }
   },
-  "published_at": "2026-11-10T09:37:52.328595Z"
+  "published_at": "2026-11-10T10:06:54.349423Z"
 }
