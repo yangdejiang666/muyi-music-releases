@@ -1,20 +1,20 @@
 {
   "schema": 1,
   "channel": "stable",
-  "version": "1.0.8",
-  "version_code": 1000800,
+  "version": "1.0.9",
+  "version_code": 1000900,
   "min_supported_code": 1,
   "force": false,
-  "notes": "1. 恢复滚动抽屉 Dock 与果冻式切换动画\n2. 底部 Tab 加重玻璃选中框\n3. 修复歌单广场返回后封面/列表被清空\n4. 切歌立即停止旧音频，新增“正在解析音源…”提示\n5. 播放地址缓存并预取下一首，切换更快\n6. 对齐原包 3 Tab + 独立搜索圆钮、液态玻璃与网易云头像",
+  "notes": "1. 补齐 vivo 原子岛 MediaSession 元数据与音频应用分类\n2. 完整封面、标题、歌手、时长与播放进度字段\n3. 增加 vivo 歌词 extras 与系统 seek/fastForward/rewind 动作\n4. OriginOS 6 用户可在「原子随身听 → 音源应用管理」中选择木易音乐\n5. 保留 1.0.8 的抽屉 Dock、歌单缓存与切歌优化",
   "platforms": {
     "android": {
       "universal_fallback": {
-        "asset": "muyi-android-universal-v1.0.8.apk",
-        "sha256": "1273722d5a4e526564e710d496e80dee6ba7b69e71628cb51f2b42aeb79c63a7",
-        "size": 62144006,
-        "version_code": 1000800
+        "asset": "muyi-android-universal-v1.0.9.apk",
+        "sha256": "6751db7e8cb3ea0b580b893934de276bc5706e0ab91c1171aa965b598e97c2a1",
+        "size": 62144062,
+        "version_code": 1000900
       }
     }
   },
-  "published_at": "2026-11-10T02:49:09.388301Z"
+  "published_at": "2026-11-10T07:17:49.478287Z"
 }
