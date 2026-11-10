@@ -1,28 +1,28 @@
 {
   "schema": 1,
   "channel": "stable",
-  "version": "1.0.15",
-  "version_code": 1001500,
+  "version": "1.0.16",
+  "version_code": 1001600,
   "min_supported_code": 1,
   "force": false,
-  "notes": "1. vivo 原子岛专用包继续使用汽水音乐包名 com.luna.music，封面/歌词/进度可读\n2. 修复空闲时底部迷你播放器压住歌单磁贴、点「我的喜欢」被吞掉的问题\n3. 原子岛卡片上的「喜欢」按钮现在会走 MediaSession custom action，回传到应用内收藏\n4. 版本 1.0.15+1001500",
+  "notes": "1. 网易云 VIP 曲目改走「官方 CDN + 作者中转」双路由并行，解析 200ms 内返回\n2. 新增起播看门狗：5 秒内没有真正出声就自动换源，修掉「进度条在走但没声音」\n3. 试听片段继续被丢弃，CDN 只给试听时自动落到中转地址\n4. 版本 1.0.16+1001600",
   "platforms": {
     "android": {
       "variants": {
         "com.luna.music": {
-          "asset": "muyi-android-soda-v1.0.15.apk",
-          "sha256": "3630449602d0a3f8003a8c590b8b3c5ce29ea8f2ea05a5e02a1415396cea71a2",
-          "size": 63437885,
-          "version_code": 1001500
+          "asset": "muyi-android-soda-v1.0.16.apk",
+          "sha256": "35c57ed7633fd478b8ee7b4f439699453fc9146ad408d4abc0447918723bbc42",
+          "size": 63437881,
+          "version_code": 1001600
         }
       },
       "universal_fallback": {
-        "asset": "muyi-android-universal-v1.0.15.apk",
-        "sha256": "a1f9fd2b6f74cfd86e3755bf267ad3abf0199467aeba58828446f83d16aa19d1",
-        "size": 63437881,
-        "version_code": 1001500
+        "asset": "muyi-android-universal-v1.0.16.apk",
+        "sha256": "23fdee4354a6aab55307ca3d7d1d90c8f7cc5c4a2a578d356ae0f01de988f958",
+        "size": 63437877,
+        "version_code": 1001600
       }
     }
   },
-  "published_at": "2026-11-10T12:10:00.000000Z"
+  "published_at": "2026-11-10T14:43:15Z"
 }
