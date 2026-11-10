@@ -5,14 +5,14 @@
   "version_code": 1001400,
   "min_supported_code": 1,
   "force": false,
-  "notes": "1. 新增 vivo 原子岛专用包：安装包名伪装为 com.netease.cloudmusic，绕过 OriginOS 的包名白名单\n2. 普通机型继续使用 com.muyi.music，功能与 1.0.13 一致\n3. 更新清单按安装包名分发对应 APK，vivo 包不会再被通用包装成第二个应用\n4. 版本 1.0.14+1001400",
+  "notes": "1. vivo 原子岛专用包改用汽水音乐包名 com.luna.music：vivo 对它走通用 MediaSession 控制器，封面/歌词/进度都能读\n2. 网易云、QQ音乐、酷狗的包名走厂商自有 SDK 控制器，只会显示播放状态\n3. 普通机型继续使用 com.muyi.music\n4. 版本 1.0.14+1001400",
   "platforms": {
     "android": {
       "variants": {
-        "com.netease.cloudmusic": {
-          "asset": "muyi-android-vivo-v1.0.14.apk",
-          "sha256": "c9451ea31574fdad9815b16e4f7926828b7e78e115767fd400f929e93d87b908",
-          "size": 63437901,
+        "com.luna.music": {
+          "asset": "muyi-android-soda-v1.0.14.apk",
+          "sha256": "089e0e507e263eed218994e229956238ac92c0b3810f2069266b2014d6fad03f",
+          "size": 63437885,
           "version_code": 1001400
         }
       },
@@ -24,5 +24,5 @@
       }
     }
   },
-  "published_at": "2026-11-10T11:40:00.000000Z"
+  "published_at": "2026-11-10T12:20:00.000000Z"
 }
