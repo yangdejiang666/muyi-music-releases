@@ -1,28 +1,28 @@
 {
   "schema": 1,
   "channel": "stable",
-  "version": "1.0.18",
-  "version_code": 1001800,
+  "version": "1.0.19",
+  "version_code": 1001900,
   "min_supported_code": 1,
   "force": false,
-  "notes": "1. 新增播放音质档位：标准 / 较高 / 极高 / 无损，默认「较高」\n2. 播放页点音质胶囊即可切换，立即重解析并保留当前进度；设置页同步入口\n3. 解析按档位优先取高码率，取不到再自动降级，保证一定出得了声\n4. 修复网易云音源2搜索结果无封面（批量 /song/detail 回填）\n5. 修复 VIP 曲目卡「解析音源」：路由恢复中转优先，看门狗要求真正出声\n6. 版本 1.0.18+1001800",
+  "notes": "1. 音质档位真正生效：中转一次返回 128/192/320/990/1990 五档，按档位就近选取\n2. 无损可拿到 FLAC（990），下载也会按真实容器命名\n3. 选中转优先、CDN 兜底，同一码率再比路由，避免为高音质去缓冲 45MB\n4. QQ 音源搜索失败时给出「作者服务器异常」提示并可重试，成功结果进缓存\n5. 首页移除 全部/推荐/新歌/榜单 筛选胶囊\n6. 版本 1.0.19+1001900",
   "platforms": {
     "android": {
       "variants": {
         "com.luna.music": {
-          "asset": "muyi-android-soda-v1.0.18.apk",
-          "sha256": "25ffbf2774578a6f8dbd6ef080851f9143c7504b013c86f59a07f4a64aba9ea1",
+          "asset": "muyi-android-soda-v1.0.19.apk",
+          "sha256": "8da0527fb8b3a95818cc5ceb2f2248af6ab4ffe52fa89b507716099225d37c22",
           "size": 63700145,
-          "version_code": 1001800
+          "version_code": 1001900
         }
       },
       "universal_fallback": {
-        "asset": "muyi-android-universal-v1.0.18.apk",
-        "sha256": "a247d88b6cf9d01a979a4b1ad3507baf926e85fa512a41a53e0c230ae30decaa",
+        "asset": "muyi-android-universal-v1.0.19.apk",
+        "sha256": "45d4e2ad3f1fd0a16acb6fdbb51c6c4e13934d0515a4cb58d4d9472ffe11da8a",
         "size": 63700141,
-        "version_code": 1001800
+        "version_code": 1001900
       }
     }
   },
-  "published_at": "2026-11-13T09:38:41Z"
+  "published_at": "2026-11-13T10:29:01Z"
 }
