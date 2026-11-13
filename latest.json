@@ -1,28 +1,28 @@
 {
   "schema": 1,
   "channel": "stable",
-  "version": "1.0.17",
-  "version_code": 1001700,
+  "version": "1.0.18",
+  "version_code": 1001800,
   "min_supported_code": 1,
   "force": false,
-  "notes": "1. 新增落盘缓存：歌单、榜单、搜索、歌词、播放地址打开过一次即可复用，重启不丢\n2. 封面走磁盘图片缓存，第二次进歌单广场不再逐张重新下载\n3. 总预算 32MB，按最后访问时间 LRU 淘汰，未命中的缓存自动回退到网络\n4. 设置 → 存储与历史 新增「离线缓存」，可查看占用并一键清除\n5. 版本 1.0.17+1001700",
+  "notes": "1. 新增播放音质档位：标准 / 较高 / 极高 / 无损，默认「较高」\n2. 播放页点音质胶囊即可切换，立即重解析并保留当前进度；设置页同步入口\n3. 解析按档位优先取高码率，取不到再自动降级，保证一定出得了声\n4. 修复网易云音源2搜索结果无封面（批量 /song/detail 回填）\n5. 修复 VIP 曲目卡「解析音源」：路由恢复中转优先，看门狗要求真正出声\n6. 版本 1.0.18+1001800",
   "platforms": {
     "android": {
       "variants": {
         "com.luna.music": {
-          "asset": "muyi-android-soda-v1.0.17.apk",
-          "sha256": "871981b2eadd7cdbcaf5f15a7dd9cebcdcf7c3d69a90ba982f81340966657401",
-          "size": 63454269,
-          "version_code": 1001700
+          "asset": "muyi-android-soda-v1.0.18.apk",
+          "sha256": "25ffbf2774578a6f8dbd6ef080851f9143c7504b013c86f59a07f4a64aba9ea1",
+          "size": 63700145,
+          "version_code": 1001800
         }
       },
       "universal_fallback": {
-        "asset": "muyi-android-universal-v1.0.17.apk",
-        "sha256": "287b707e098e5f33840dcc238ec1a48f0f471cf0ed6dbfaf79986c342ee9a6aa",
-        "size": 63454265,
-        "version_code": 1001700
+        "asset": "muyi-android-universal-v1.0.18.apk",
+        "sha256": "a247d88b6cf9d01a979a4b1ad3507baf926e85fa512a41a53e0c230ae30decaa",
+        "size": 63700141,
+        "version_code": 1001800
       }
     }
   },
-  "published_at": "2026-11-10T15:33:31Z"
+  "published_at": "2026-11-13T09:38:41Z"
 }
