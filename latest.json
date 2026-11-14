@@ -1,28 +1,28 @@
 {
   "schema": 1,
   "channel": "stable",
-  "version": "1.0.19",
-  "version_code": 1001900,
+  "version": "1.0.20",
+  "version_code": 1002000,
   "min_supported_code": 1,
   "force": false,
-  "notes": "1. 音质档位真正生效：中转一次返回 128/192/320/990/1990 五档，按档位就近选取\n2. 无损可拿到 FLAC（990），下载也会按真实容器命名\n3. 选中转优先、CDN 兜底，同一码率再比路由，避免为高音质去缓冲 45MB\n4. QQ 音源搜索失败时给出「作者服务器异常」提示并可重试，成功结果进缓存\n5. 首页移除 全部/推荐/新歌/榜单 筛选胶囊\n6. 版本 1.0.19+1001900",
+  "notes": "1. 音源顺序对齐原包：音源1=QQ、音源2=网易云、音源3=酷我、音源4=酷狗\n2. 网易云搜索改用 /cloudsearch，封面直接来自 al.picUrl（修音源2封面空白）\n3. QQ 请求补齐 ?app= 参数，与原包完全一致；失败时提供「复制诊断」\n4. QQ 搜索失败自动重试并缓存结果，服务端抽风时不再整页空白\n5. 版本 1.0.20+1002000",
   "platforms": {
     "android": {
       "variants": {
         "com.luna.music": {
-          "asset": "muyi-android-soda-v1.0.19.apk",
-          "sha256": "8da0527fb8b3a95818cc5ceb2f2248af6ab4ffe52fa89b507716099225d37c22",
+          "asset": "muyi-android-soda-v1.0.20.apk",
+          "sha256": "0a10d9caa57769173b16517439ec0878cac75283ec46a1be5abb05adf1cdcafb",
           "size": 63700145,
-          "version_code": 1001900
+          "version_code": 1002000
         }
       },
       "universal_fallback": {
-        "asset": "muyi-android-universal-v1.0.19.apk",
-        "sha256": "45d4e2ad3f1fd0a16acb6fdbb51c6c4e13934d0515a4cb58d4d9472ffe11da8a",
+        "asset": "muyi-android-universal-v1.0.20.apk",
+        "sha256": "6232633480d6a22226ece11ed46e6596e32b26c129af82dd720b9a9b9bad1891",
         "size": 63700141,
-        "version_code": 1001900
+        "version_code": 1002000
       }
     }
   },
-  "published_at": "2026-11-13T10:29:01Z"
+  "published_at": "2026-11-14T04:04:20Z"
 }
