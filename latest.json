@@ -1,28 +1,28 @@
 {
   "schema": 1,
   "channel": "stable",
-  "version": "1.0.21",
-  "version_code": 1002100,
+  "version": "1.0.22",
+  "version_code": 1002200,
   "min_supported_code": 1,
   "force": false,
-  "notes": "1. 修复 QQ 音源「点 A 播 B」：网关 QQ 播放接口对不同歌曲返回同一文件\n2. QQ 曲目改为按歌名+歌手跨音源取同一首（网易云 → 酷我），网关只作最后兜底\n3. 同曲判定剥离括号后缀并做歌手匹配，宁可换源也不放错歌\n4. 版本 1.0.21+1002100",
+  "notes": "1. 任意歌曲自动跨音源路由：某音源解析不出地址时，按歌名+歌手去网易云/酷我/酷狗找\n2. 候选全部放不出来时，播放器再用跨音源结果重试一次\n3. 同曲判定改为严格相等：不剥括号、不做包含，晴天(Live) 与 晴天 视为两首歌\n4. 网易云仍 wy2 中转优先、官方 CDN 兜底，音质档位不变\n5. 版本 1.0.22+1002200",
   "platforms": {
     "android": {
       "variants": {
         "com.luna.music": {
-          "asset": "muyi-android-soda-v1.0.21.apk",
-          "sha256": "14ad69ee55e448ca6329ad6eb16acb9f8fd5bbff48ddfcee44bac011f77dc1b6",
+          "asset": "muyi-android-soda-v1.0.22.apk",
+          "sha256": "b5ed4b0ba9ebe02942d0601723b504f07cbf9ee6a0485230ed61ce6d6cf6f6b2",
           "size": 63700145,
-          "version_code": 1002100
+          "version_code": 1002200
         }
       },
       "universal_fallback": {
-        "asset": "muyi-android-universal-v1.0.21.apk",
-        "sha256": "fbb3c25cb31ccb55f447b014655880a768eb9dfd1106882118d374153e3d0f2f",
+        "asset": "muyi-android-universal-v1.0.22.apk",
+        "sha256": "2c1b75642b8de122abd5cc534b51bf7a74de7091f1fd87a279313fed7a34d7fd",
         "size": 63700141,
-        "version_code": 1002100
+        "version_code": 1002200
       }
     }
   },
-  "published_at": "2026-11-14T08:10:29Z"
+  "published_at": "2026-11-14T13:44:14Z"
 }
