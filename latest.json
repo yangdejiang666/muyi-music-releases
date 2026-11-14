@@ -1,28 +1,28 @@
 {
   "schema": 1,
   "channel": "stable",
-  "version": "1.0.20",
-  "version_code": 1002000,
+  "version": "1.0.21",
+  "version_code": 1002100,
   "min_supported_code": 1,
   "force": false,
-  "notes": "1. 音源顺序对齐原包：音源1=QQ、音源2=网易云、音源3=酷我、音源4=酷狗\n2. 网易云搜索改用 /cloudsearch，封面直接来自 al.picUrl（修音源2封面空白）\n3. QQ 请求补齐 ?app= 参数，与原包完全一致；失败时提供「复制诊断」\n4. QQ 搜索失败自动重试并缓存结果，服务端抽风时不再整页空白\n5. 版本 1.0.20+1002000",
+  "notes": "1. 修复 QQ 音源「点 A 播 B」：网关 QQ 播放接口对不同歌曲返回同一文件\n2. QQ 曲目改为按歌名+歌手跨音源取同一首（网易云 → 酷我），网关只作最后兜底\n3. 同曲判定剥离括号后缀并做歌手匹配，宁可换源也不放错歌\n4. 版本 1.0.21+1002100",
   "platforms": {
     "android": {
       "variants": {
         "com.luna.music": {
-          "asset": "muyi-android-soda-v1.0.20.apk",
-          "sha256": "0a10d9caa57769173b16517439ec0878cac75283ec46a1be5abb05adf1cdcafb",
+          "asset": "muyi-android-soda-v1.0.21.apk",
+          "sha256": "14ad69ee55e448ca6329ad6eb16acb9f8fd5bbff48ddfcee44bac011f77dc1b6",
           "size": 63700145,
-          "version_code": 1002000
+          "version_code": 1002100
         }
       },
       "universal_fallback": {
-        "asset": "muyi-android-universal-v1.0.20.apk",
-        "sha256": "6232633480d6a22226ece11ed46e6596e32b26c129af82dd720b9a9b9bad1891",
+        "asset": "muyi-android-universal-v1.0.21.apk",
+        "sha256": "fbb3c25cb31ccb55f447b014655880a768eb9dfd1106882118d374153e3d0f2f",
         "size": 63700141,
-        "version_code": 1002000
+        "version_code": 1002100
       }
     }
   },
-  "published_at": "2026-11-14T04:04:20Z"
+  "published_at": "2026-11-14T08:10:29Z"
 }
